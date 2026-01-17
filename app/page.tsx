@@ -76,22 +76,23 @@ function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: {
           : 'bg-gradient-to-b from-white/80 to-transparent backdrop-blur-md'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo Mejorado */}
-            <a href="#" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 rounded-xl overflow-hidden ring-2 ring-emerald-100 group-hover:ring-emerald-300 transition-all duration-300">
+            <a href="#" className="flex items-center gap-3 lg:gap-4 group">
+              <div className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-2xl overflow-hidden ring-2 ring-emerald-100 group-hover:ring-emerald-300 transition-all duration-300 bg-white shadow-sm">
                 <Image
                   src="/assets/images/logo.png"
                   alt="Bio-Fertilizantes Cuitzeo"
                   fill
-                  className="object-contain p-1 group-hover:scale-110 transition-transform duration-300"
+                  className="object-contain p-2 lg:p-2.5 group-hover:scale-110 transition-transform duration-300"
+                  priority
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-black text-gray-900 tracking-tight group-hover:text-emerald-800 transition-colors">
+                <span className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight group-hover:text-emerald-800 transition-colors">
                   Cuitzeo
                 </span>
-                <span className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider">
+                <span className="text-[10px] sm:text-xs lg:text-sm font-semibold text-emerald-700 uppercase tracking-wider">
                   Bio-Fertilizantes
                 </span>
               </div>
