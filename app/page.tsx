@@ -81,8 +81,8 @@ function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo Mejorado */}
-            <a href="#" className="flex items-center gap-3 lg:gap-4 group">
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24">
+            <a href="#" className="flex items-center gap-4 lg:gap-5 group">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28">
                 <Image
                   src="/assets/images/logo2.png"
                   alt="Bio-Fertilizantes Cuitzeo"
@@ -92,10 +92,10 @@ function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight group-hover:text-emerald-800 transition-colors">
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight group-hover:text-emerald-800 transition-colors">
                   Cuitzeo
                 </span>
-                <span className="text-[10px] sm:text-xs lg:text-sm font-semibold text-emerald-700 uppercase tracking-wider">
+                <span className="text-xs sm:text-sm lg:text-base font-semibold text-emerald-700 uppercase tracking-wider">
                   Bio-Fertilizantes
                 </span>
               </div>
