@@ -624,63 +624,63 @@ function IngenieriaProcesoSection() {
   ];
 
   return (
-    <section className=\"py-24 px-6 lg:px-12 bg-gray-900 text-white\">
-      <div className=\"max-w-7xl mx-auto\">
-        <div className=\"text-center mb-16 space-y-4\">
-          <div className=\"inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-4\">
-            <Zap className=\"w-4 h-4 text-emerald-400\" />
-            <span className=\"text-sm font-semibold text-emerald-300\">Ingeniería del Proceso</span>
+    <section className="py-24 px-6 lg:px-12 bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-4">
+            <Zap className="w-4 h-4 text-emerald-400" />
+            <span className="text-sm font-semibold text-emerald-300">Ingeniería del Proceso</span>
           </div>
-          <h2 className=\"text-5xl font-black\">
+          <h2 className="text-5xl font-black">
             Metodología de 5 Fases
           </h2>
-          <p className=\"text-xl text-gray-300 max-w-3xl mx-auto\">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Proceso científico validado para transformar biomasa invasiva en fertilizante certificable. 
-            <strong className=\"text-white\"> No es simple \"pudrimiento\"</strong>, es manufactura biológica controlada.
+            <strong className="text-white"> No es simple pudrimiento</strong>, es manufactura biológica controlada.
           </p>
         </div>
 
-        <div className=\"space-y-8\">
+        <div className="space-y-8">
           {fases.map((item, index) => (
             <div 
               key={index} 
-              className=\"group relative bg-white/5 backdrop-blur-sm rounded-3xl p-8 lg:p-10 border border-white/10 hover:border-white/30 transition-all duration-300 hover:bg-white/10\"
+              className="group relative bg-white/5 backdrop-blur-sm rounded-3xl p-8 lg:p-10 border border-white/10 hover:border-white/30 transition-all duration-300 hover:bg-white/10"
             >
-              <div className=\"flex flex-col lg:flex-row gap-8\">
+              <div className="flex flex-col lg:flex-row gap-8">
                 {/* Fase Number */}
-                <div className=\"flex-shrink-0\">
+                <div className="flex-shrink-0">
                   <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg`}>
-                    <span className=\"text-3xl font-black text-white\">{item.fase}</span>
+                    <span className="text-3xl font-black text-white">{item.fase}</span>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className=\"flex-1 space-y-4\">
+                <div className="flex-1 space-y-4">
                   <div>
-                    <div className=\"flex items-center gap-4 mb-2\">
-                      <h3 className=\"text-3xl font-black\">{item.titulo}</h3>
-                      <span className=\"px-3 py-1 bg-white/10 rounded-full text-sm font-bold text-emerald-300\">
+                    <div className="flex items-center gap-4 mb-2">
+                      <h3 className="text-3xl font-black">{item.titulo}</h3>
+                      <span className="px-3 py-1 bg-white/10 rounded-full text-sm font-bold text-emerald-300">
                         {item.duracion}
                       </span>
                     </div>
-                    <p className=\"text-lg text-gray-300\">{item.descripcion}</p>
+                    <p className="text-lg text-gray-300">{item.descripcion}</p>
                   </div>
 
                   {/* Detalles List */}
-                  <ul className=\"space-y-3\">
+                  <ul className="space-y-3">
                     {item.detalles.map((detalle, idx) => (
-                      <li key={idx} className=\"flex items-start gap-3\">
-                        <CheckCircle2 className=\"w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5\" />
-                        <span className=\"text-gray-200\">{detalle}</span>
+                      <li key={idx} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-200">{detalle}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Icon */}
-                <div className=\"hidden lg:block flex-shrink-0\">
+                <div className="hidden lg:block flex-shrink-0">
                   <div className={`w-16 h-16 ${item.bgColor} rounded-2xl flex items-center justify-center`}>
-                    <item.icon className=\"w-8 h-8 text-gray-700\" />
+                    <item.icon className="w-8 h-8 text-gray-700" />
                   </div>
                 </div>
               </div>
@@ -689,17 +689,17 @@ function IngenieriaProcesoSection() {
         </div>
 
         {/* Key Insight Banner */}
-        <div className=\"mt-16 p-8 bg-gradient-to-r from-emerald-500/20 to-green-500/20 rounded-3xl border-2 border-emerald-400/30\">
-          <div className=\"flex items-start gap-6\">
-            <div className=\"w-14 h-14 bg-emerald-400 rounded-2xl flex items-center justify-center flex-shrink-0\">
-              <Sparkles className=\"w-8 h-8 text-gray-900\" />
+        <div className="mt-16 p-8 bg-gradient-to-r from-emerald-500/20 to-green-500/20 rounded-3xl border-2 border-emerald-400/30">
+          <div className="flex items-start gap-6">
+            <div className="w-14 h-14 bg-emerald-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <Sparkles className="w-8 h-8 text-gray-900" />
             </div>
             <div>
-              <h4 className=\"text-2xl font-black text-white mb-3\">Garantía de Calidad Industrial</h4>
-              <p className=\"text-lg text-gray-200 leading-relaxed\">
-                El control térmico en la <strong className=\"text-emerald-300\">Fase D (55-65°C)</strong> es crítico: 
+              <h4 className="text-2xl font-black text-white mb-3">Garantía de Calidad Industrial</h4>
+              <p className="text-lg text-gray-200 leading-relaxed">
+                El control térmico en la <strong className="text-emerald-300">Fase D (55-65°C)</strong> es crítico: 
                 sanitiza el producto eliminando patógenos y garantiza que sea apto para 
-                <strong className=\"text-white\"> certificación OMRI</strong> en fase futura, 
+                <strong className="text-white"> certificación OMRI</strong> en fase futura, 
                 accediendo al mercado premium de exportación orgánica.
               </p>
             </div>
