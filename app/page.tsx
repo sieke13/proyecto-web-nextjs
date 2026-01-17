@@ -82,12 +82,12 @@ function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: {
           <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo Mejorado */}
             <a href="#" className="flex items-center gap-3 lg:gap-4 group">
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-all duration-300">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24">
                 <Image
                   src="/assets/images/logo2.png"
                   alt="Bio-Fertilizantes Cuitzeo"
                   fill
-                  className="object-contain p-1.5 sm:p-2 lg:p-2.5 group-hover:scale-105 transition-transform duration-300"
+                  className="object-contain group-hover:scale-105 transition-transform duration-300"
                   priority
                 />
               </div>
