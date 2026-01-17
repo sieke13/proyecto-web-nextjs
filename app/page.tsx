@@ -84,7 +84,7 @@ function Navbar({ scrolled, mobileMenuOpen, setMobileMenuOpen }: {
             <a href="#" className="flex items-center gap-3 lg:gap-4 group">
               <div className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-2xl overflow-hidden ring-2 ring-emerald-100 group-hover:ring-emerald-300 transition-all duration-300 bg-white shadow-sm">
                 <Image
-                  src="/assets/images/logo.png"
+                  src="/assets/images/logo2.png"
                   alt="Bio-Fertilizantes Cuitzeo"
                   fill
                   className="object-contain p-2 lg:p-2.5 group-hover:scale-110 transition-transform duration-300"
@@ -1275,7 +1275,7 @@ function Footer() {
           <div className="flex items-center gap-3">
             <div className="relative w-10 h-10">
               <Image
-                src="/assets/images/logo.png"
+                src="/assets/images/logo2.png"
                 alt="Logo"
                 fill
                 className="object-contain invert"
